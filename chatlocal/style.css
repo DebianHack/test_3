@@ -1,0 +1,448 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0;
+	background-image: url(images/back.jpg);
+	height: 100%;
+}
+/*=================
+Шапка сайта
+==================*/
+
+
+#shapka
+{
+	width: 100%;
+    height: 65px;
+    background: #9a9abc;
+}
+
+#logo
+{
+	width: 100px;
+    height: 100%;
+    position: relative;
+      float: left;
+}
+
+#logo img
+{
+	width: 100%;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
+
+#logo span
+{
+	font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 130px;
+    color: white;
+}
+ #menu
+ {
+ 	float: right;
+ 	height: 100%;
+ }
+
+ #menu a
+ {
+ 	font-size: 30px;
+    color: white;
+    text-decoration: none;
+    height: calc(100% - 14px);
+    display: block;
+    float: left;
+    padding: 14px 10px 0;
+ }
+
+ #menu a:hover
+ {
+ 	background: #343448;
+ }
+
+
+/*=================
+Основной блок с контактами и сообщениями
+==================*/
+ #content
+ {
+ 	width: 950px;
+ 	height: calc(100% - 100px);
+ 	margin: 0 auto;
+ 	background: white;
+
+ }
+/*=================
+Левый блок с поиском и контактами
+==================*/
+#users
+{
+	width: 32%;
+    overflow-y: auto;
+    height: 100%;
+    float:left;
+}
+/*=================
+Поиск
+=================*/
+#poisk 
+{
+	width: 92%;
+    height: 30px;
+    padding: 10px;
+}
+#poisk input
+{
+	background: #e6d7d7;
+    border: none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-right: 10px;
+}
+
+ #poisk button
+ {
+ 	width: 40px;
+    height: 30px;
+    border: none;
+    background: #eae0e0;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+ }
+#poisk button:active
+{
+	background:#505000;
+}
+ #poisk button img
+ {
+ 	width: 100%;
+ 	height:100%;
+ }
+
+
+ /*=================
+Список контактов
+=================*/
+
+#spisok ul
+{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+#spisok ul li
+{
+	position: relative;
+	padding: 8px;
+	width: calc(100% - 20px);
+}
+#spisok ul li a
+{
+	text-decoration:none;
+	color:#505050; 
+}
+#spisok ul .avatar
+{
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+
+#spisok ul .avatar img
+{
+	width: 100%;
+	height:100%;
+}
+#spisok ul li .time
+{
+	top: 30px;
+    position: absolute;
+    right: 13px;
+}
+
+#spisok  h2,
+#spisok p
+{
+	margin: 0;
+}
+
+#spisok  h2
+{
+	margin-bottom: 5px;
+}
+
+#spisok
+{
+	width: 80%;
+    height: 92%;
+    overflow-y: auto;
+}
+
+
+/*=====================
+
+Стили для переписок с пользователем
+
+=======================*/
+
+#soobsheya
+{
+	float: right;
+    width: calc(950px - 254px);
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    bottom: 610px;
+}
+
+#spispok-message
+{
+	height: 80%;
+	overflow-y: auto;
+}
+#soobsheya ul
+{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+#soobsheya ul .avatar
+{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px: 
+}
+
+#soobsheya ul .avatar img
+{
+	width: 100%;
+	height: 100%;
+}
+#soobsheya ul li
+{
+	position: relative;
+	padding: 10px;
+	
+}
+
+#soobsheya ul h2,
+#soobsheya ul p
+{
+	margin: 0;
+}
+#soobsheya ul .time
+{
+	position: relative;
+    float: right;
+    top: -20px;
+}
+
+
+/*=====================
+
+Стили для формы отправки сообщений
+
+=======================*/
+
+
+#form
+{
+	padding: 10px;
+    height: calc(20% - 20px);
+}
+
+
+#form textarea
+{
+	width: 88%;
+    height: 80%;
+}
+
+
+#form button
+{
+	border: 0;
+    outline: none;
+    background: none;
+    width: 70px;
+    height: 86px;
+    cursor: pointer;
+    float: right;
+}
+
+#form button img
+{
+	width: 100%;
+    height: 100%;
+}
+
+/*=====================
+
+Стили для формы авторизации и регистрации
+
+=======================*/
+
+#form2
+{
+	padding: 10px;
+    height: calc(20% - 20px);
+}
+#form2 button
+{
+	border: 0;
+    outline: none;
+    background: none;
+    width: 140px;
+    height: 30px;
+    cursor: pointer;
+    float: left;
+}
+#form2 a
+{
+	position: relative;
+}
+
+
+
+
+
+/*=====================
+
+Стили для модальных окон
+
+=======================*/
+
+
+.modal
+{
+	display: none;
+	width: 360px;
+	background: white;
+	border-radius: 10px;
+	border: 2px solid #9a9abc;
+	position: absolute;
+	top: 130px;
+	left: calc(50% - 200px);
+	padding: 20px;
+	max-height: 330px;
+	 z-index: 9999;
+	
+}
+
+
+
+.modal .close
+{
+	position: absolute;
+	top:10px;
+	right: 10px;
+	cursor: pointer;
+	overflow-y: auto;
+}
+.modal .content
+{
+	overflow-y: auto;
+	height: 339px;
+	margin-top: 10px;
+
+}
+
+/*=====================
+
+Модальное окно с контактами
+
+=======================*/
+
+
+#contacts-modal ul
+{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contacts-modal ul .avatar
+{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px: 
+}
+
+#contacts-modal ul .avatar img
+{
+	width: 100%;
+	height: 100%;
+}
+#contacts-modal ul li
+{
+	position: relative;
+	padding: 10px;
+}
+
+#contacts-modal ul h2,
+{
+	margin: 10px;
+}
+
+
+/*=====================
+
+Модальное окно с авторизацией
+
+=======================*/
+
+.modal2
+{
+	display: none;
+	width: 600px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #9a9abc;
+    position: absolute;
+    top: 130px;
+    left: calc(50% - 200px);
+    padding: 20px;
+}
+
+.modal2 .close2
+{
+	position: absolute;
+	top:10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+
+.modal2 .content2
+{
+	list-style: none;
+}
+
+
+#entry-modal  h2,
+#entry-modal  h1
+{
+	font-size: 40px;
+	text-align: center;
+}
+
+#form2 textarea
+{
+	width: 100%;
+    height: 80%;
+}
